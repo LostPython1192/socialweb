@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-x4p*-vhg_#zx-5@6)x9532rxiebfgyfwn6&y%w-w&f_m3_+c=b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['laithan2.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['laithan2.pythonanywhere.com', '127.0.0.1', "www.simplesocialweb.com"]
 
 
 # Application definition
