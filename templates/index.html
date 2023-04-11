@@ -1,82 +1,62 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
-{% block content %}
+{% block frontpage %}
+    
 
+<head>
+    <title>Home - Simple Social</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'assets/fonts/line-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+</head>
 
-
-
-
-<div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5 text-center">
-      <h1 class="display-5 fw-bold">Welcome to Simple Social!</h1>
-      <p class=" fs-4">The first simple social media website by a student!</p>
-
-      <div class="d-flex justify-content-center">
-        <div class="col-4 rounded-3 border border-2 border-danger text-center">
-
-          <p style="padding-top: 10px;">UPDATES!</p>
-          <p>Apologies for the issues regarding the site, these issues were <b>out of my control</b> but I will do my 
-            best to prevent them from <b>occuring again</b>.
-          </p>
-  
-  
-        </div>
-      </div>
-
-      <br>
-
-
-
-      <a href="{% url 'groups:all' %}" class="btn btn-warning" role="button">Browse</a>
-    </div>
-  </div>
-
-<div class="row d-flex justify-content-center">
-
-  <div class="p-5 mb-4 bg-dark rounded-5 col-md-10">
-    <div class="container-md py-5 text-light text-center">
-  
-      <h2>Change log</h2>
-
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
-
-      <br>
-
-      <div class="row d-flex justify-content-center">
-
-
-        <div class="col-md-9 rounded">
-          <div class="p-4 mb-4 container border border-1 border-dark-subtle text-center text-light rounded-5 ">
-            <h2>Change log #1</h2>
-            
-            
-            <br>
-
-            <div class="d-flex justify-content-center text-center">
-
-              <ul class="p-1">
-                <li><p>Added change log</p></li>
-                <li><p>Setup domain name</p></li>
-                <li><p>Increased update ability</p></li>
-              </ul>
+<body>
+    <header class="text-center text-dark masthead" style="background: url(&quot;../static/assets/img/FullLogo.jpg&quot;) center / contain no-repeat, #000000;height: 500px;margin-top: 0px;margin-bottom: -87px;">
+        <div class="overlay"></div>
+    </header>
+    <section class="text-center bg-light features-icons" style="margin-bottom: -99px;">
+        <h1 class="mb-5">Welcome to Simple Social!</h1>
+        <p class="fs-2">The first simple social media website by a student!</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-check text-dark m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Easy to Use</h3>
+                        <p class="lead mb-0">With its simple use case and easy directions, it's more enjoyable for anyone.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-note text-dark m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Quick &amp; Done</h3>
+                        <p class="lead mb-0">The ability to write down your thoughts and instantly have them available in your group.&nbsp;&nbsp;</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="la la-upload text-dark m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Updates</h3>
+                        <p class="lead mb-0">Because of its early stage, Simple Social will constantly be updated, and of course, be open to any suggestions.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="col-lg-6 col-xxl-12 fs-5 text-center text-lg-start my-auto h-100">
+                <p class="text-center text-muted small mb-4 mb-lg-0">© Simple Social 2023. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/script.min.js"></script>
+</body>
 
-    
 
-
-
-
-    
-
-
-
-{% endblock %}
-    
-
+{% endblock frontpage %}
